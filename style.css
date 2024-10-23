@@ -1,0 +1,380 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 2,0;
+  margin: 0;
+  padding: 0;
+  background-color: #E8DFCA;
+}
+header {
+  background-color: #004225;
+  color: #ffffff;
+  padding-top: 20px;
+  min-height: 50px;
+  border-bottom: #004225 3px solid;
+}
+header h1 {
+  margin: 0;
+  text-align: left;
+  padding-bottom: 10px;
+  font-family: Futura;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.highlight {
+  color: #000000;
+}
+.nav-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #0a0a0a00;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.nav-button:hover {
+  transform: scale(1.1);
+  background-color: #ff5722;
+}
+#showcase {
+  min-height: 400px;
+  background: url("/api/placeholder/800/400") no-repeat center
+    center/cover;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+#showcase {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#showcase .background-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+#showcase .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+#showcase .overlay h1 {
+    font-size: 4rem;  /* Ukuran font untuk heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Futura;
+}
+#showcase .overlay p {
+    font-size: 2rem;  /* Ukuran font untuk heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Futura;
+}
+/* Tambahkan style untuk mengatur ukuran font p dalam overlay */
+#showcase .overlay p {
+    font-size: 1.5rem;  /* Ukuran font untuk paragraf */
+    margin-bottom: 15px;
+}
+
+#services {
+  margin-top: 20px;
+}
+#services .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+#services .box img {
+  width: 90px;
+}
+footer {
+  background-color: #004225;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#contact form input,
+#contact form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+#contact form button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#contact form button:hover {
+  background-color: #ff5722;
+}
+#whatsapp-cta {
+  background-color: #705C53;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 30px;
+}
+
+#whatsapp-cta h2 {
+  margin-bottom: 10px;
+}
+
+#whatsapp-cta p {
+  margin-bottom: 20px;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: #25d366;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e;
+  color: white;
+}
+
+.whatsapp-icon {
+  margin-right: 10px;
+  border-radius: 10px;
+  width: auto;
+  height: 30px;    
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button {
+    padding: 10px 20px;
+  }
+}
+
+  /* Style the Tips section */
+#Tips {
+  position: relative;
+  background-color: #705C53;
+  padding: 20px;
+  margin-top: -70px; /* Pull the section up slightly */
+  border-radius: 8px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Tips h2 {
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#Tips p {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+#Tips ul {
+  color: #ffffff;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#Tips li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+  #Price li {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .price-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .price-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+    font-family: 'Futura', sans-serif;
+  }
+  
+  .price-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .price-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  }
+  
+  .price-card.featured {
+    border: 2px solid #004225;
+    transform: scale(1.05);
+  }
+  
+  .price-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+  }
+  
+  .price-header {
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  .price-header h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Futura', sans-serif;
+  }
+  
+  .price {
+    font-size: 2rem;
+    color: #004225;
+    font-weight: bold;
+    font-family: 'Futura', sans-serif;
+  }
+  
+  .badge {
+    position: absolute;
+    top: -20px;
+    right: -80px;
+    background: #ff5722;
+    color: white;
+    padding: 8px 50px;
+    transform: rotate(45deg);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .price-features {
+    margin: 25px 0;
+  }
+  
+  .price-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .price-features li {
+    margin: 15px 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .price-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #004225;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .price-button:hover {
+    background: #ff5722;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .price-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .price-card {
+      width: 100%;
+      max-width: 350px;
+    }
+    
+    .price-card.featured {
+      transform: scale(1);
+    }
+    
+    .price-card.featured:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
